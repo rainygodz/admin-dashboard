@@ -6,7 +6,7 @@
 
 body {
   background-color: #dae1e8;
-  height: 100vh;
+  height: 120vh;
   font-family: 'Roboto', sans-serif;
   display: grid;
   grid-template-columns: clamp(200px, 30%, 260px) 500px repeat(2, 1fr);
@@ -61,6 +61,13 @@ body {
   font-weight: 700;
   display: flex;
   align-items: center;
+  cursor: pointer;
+
+  transition: color 0.2s linear;
+}
+
+.link:hover {
+  color: #ffcc00;
 }
 
 .link img {
@@ -106,6 +113,7 @@ body {
 .search-icon img {
   width: 15px;
   height: auto;
+  cursor: pointer;
 }
 
 .search-bar input {
@@ -149,11 +157,13 @@ body {
 
 .profile > .profile-image img {
   width: 45px;
+  cursor: pointer;
 }
 
 .profile .text {
   font-weight: 700;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .notification img {
@@ -181,6 +191,13 @@ body {
   height: 37px;
   border: none;
   border-radius: 20px;
+  cursor: pointer;
+
+  transition: background-color 0.2s linear;
+}
+
+.buttons button:hover {
+  background-color: #39c6fe;
 }
 
 .projects {
@@ -193,11 +210,12 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
+  align-self: end;
 }
 
 .card {
   width: 350px;
-  height: 190px;
+  height: 230px;
   padding: 30px 20px 25px 25px;
   background-color: #FFFFFF;
   border-radius: 7px;
