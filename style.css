@@ -5,10 +5,11 @@
 }
 
 body {
+  background-color: #dae1e8;
   height: 100vh;
   font-family: 'Roboto', sans-serif;
   display: grid;
-  grid-template-columns: clamp(200px, 30%, 260px) repeat(3, 1fr);
+  grid-template-columns: clamp(200px, 30%, 260px) 500px repeat(2, 1fr);
   grid-template-rows: 1fr 2fr 2fr;
   grid-template-areas: 
                       "sidebar header header header"
@@ -112,7 +113,7 @@ body {
 }
 
 .search-bar input {
-  background-color: rgb(218, 225, 232);
+  background-color: #dae1e8;
   font-size: 14px;
   border-radius: 15px;
   padding: 5px;
@@ -184,4 +185,53 @@ body {
   height: 37px;
   border: none;
   border-radius: 20px;
+}
+
+.projects {
+  background-color: #dae1e8;
+  padding-left: 20px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  width: 350px;
+  height: 190px;
+  padding: 30px 20px 25px 25px;
+  background-color: #FFFFFF;
+  border-radius: 7px;
+  border-left: 8px solid #ffcc00;
+  box-shadow: 3px 3px 10px #c8c7c7
+}
+
+.title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.project-name {
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.description {
+  color: #8c8c8c;
+  font-size: 16px;
+  margin-bottom: 45px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.social-button img {
+  width: 20px;
+  height: auto;
 }
